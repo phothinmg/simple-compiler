@@ -5,12 +5,21 @@ String of some math operators to result with javascript.
 > Learning about compiler with Javascript.
 > This is only for exercise.
 
+```
+Only this four lines of text can be compile.
+
+- sum {number} and {number}
+- sub {number} from {number}
+- mul {number} with {number}
+- div {number} by {number}
+```
+
 **_string to token_**
 
 ```js
 var str = "sum 5 and 4";
 
-transpileString(str).token;
+var token = transpileString(str).token;
 ```
 
 Token
@@ -41,7 +50,7 @@ Token
 ```js
 var str = "sum 5 and 4";
 
-transpileString(str).ast;
+var ast = transpileString(str).ast;
 ```
 
 AST
@@ -76,7 +85,7 @@ AST
 ```js
 var str = "sum 5 and 4";
 
-transpileString(str).result;
+var result = transpileString(str).result;
 
 // 9
 ```
