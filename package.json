@@ -1,0 +1,9 @@
+{
+  "name": "simple-compiler",
+  "version": "1.0.0",
+  "description": "Simple Compiler",
+  "main": "index.js",
+  "type": "module",
+  "author": "",
+  "license": "MIT"
+}
