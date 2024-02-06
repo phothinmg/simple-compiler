@@ -1,8 +1,7 @@
 /*
 Simple Compiler                                    
 String to result with Javascript                 
-*                                                                           
-Copyright (C) 2024 Pho Thin Maung.                       
+2024 | Pho Thin Maung.                       
 *                                                                           
 *****************************
 String :                    *       
@@ -14,13 +13,7 @@ div {number} by {number}    *
  */
 function transpileString(str) {
   var x = str.split(" ");
-  /* lexer, text > token object */
-  //   var t = {
-  //     operator: x[0],
-  //     firstNumber:x[0],,
-  //     expression: x[2],
-  //     secondNumber: parseInt(x[3]),
-  //   };
+
   var t = [
     {
       type: "Operator",
@@ -93,7 +86,3 @@ function transpileString(str) {
   const ast = JSON.stringify(a, null, 2);
   return { token, ast, result };
 }
-
-var str = "sum 5 and 4";
-
-console.log(transpileString(str).ast);
